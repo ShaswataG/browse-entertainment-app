@@ -1,0 +1,39 @@
+.anime-item {
+    
+}
+
+.anime-item > p {
+}
+
+.genres {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+}
+
+.genres > li {
+    height: 1.5em;
+    width: 6em;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px;
+    background-color: antiquewhite;
+}
+
+.synopsis {
+    width: 80%;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+}
+
+.synopsis-expanded {
+    overflow: visible;
+}
+
+.synopsis-hidden {
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
