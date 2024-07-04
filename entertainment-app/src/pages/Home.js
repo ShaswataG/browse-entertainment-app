@@ -9,7 +9,7 @@ export default function Home() {
     const [animeArray, setAnimeArray] = useState([])
     const [animeCollection, setAnimeCollection] = useState([])
     const [fetchSuccess, setFetchSuccess] = useState(false)
-
+    
     const getAll = async () => {
         try {
             const response = await axios.get(url, {
@@ -52,7 +52,7 @@ export default function Home() {
                         { animeCollection}
                     </div>
                     :
-                    <h1>Couldn't load data</h1>
+                    <h1>Loading...</h1>
                 }
             </div>
         </UserContext.Provider>
